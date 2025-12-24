@@ -191,7 +191,12 @@ if current_chat["messages"][-1]["role"] == "user":
         time.sleep(random.uniform(0.015, 0.04))  # typing speed
 
     current_chat["messages"].append({"role": "assistant", "content": reply})
-    current_chat["title"] = prompt[:30]
+    last_user_msg = next(
+    (m["content"] for m in reversed(current_chat["messages"]) if m["role"] == "user"),
+    "Chat"
+    )
+
+    current_chat["title"] = last_user_msg[:30]
 
     time.sleep(0.3)
     st.rerun()
