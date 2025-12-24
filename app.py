@@ -118,11 +118,13 @@ st.markdown("""
 }
 .bot {
     background: #f1f5f9;
+    color: #111;        /* 👈 FORCE BLACK TEXT */
     padding: 12px 16px;
     border-radius: 16px;
     max-width: 80%;
     margin-top: 12px;
 }
+
 .typing {
     font-style: italic;
     color: #666;
