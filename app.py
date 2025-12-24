@@ -186,7 +186,7 @@ st.markdown("""
 # ✅ Header
 # ======================
 st.markdown("<h2 class='title'>Chat with Anumalik</h2>", unsafe_allow_html=True)
-st.markdown("<p class='subtitle'>Same vibe. Same care. Just me.</p>", unsafe_allow_html=True)
+st.markdown("<p class='subtitle'>Hey it's me.</p>", unsafe_allow_html=True)
 
 # ======================
 # ✅ Chat Display
